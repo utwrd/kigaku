@@ -1,0 +1,146 @@
+body { padding-top: 80px;
+       background-color:#2c3e50;
+     }
+@media ( min-width: 768px ) {
+    #banner {
+        min-height: 300px;
+        border-bottom: none;
+    }
+    .bs-docs-section {
+        margin-top: 2em;
+    }
+    .bs-component {
+        position: relative;
+    }
+    .bs-component .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+    .bs-component .modal-dialog {
+        width: 90%;
+    }
+    .bs-component .popover {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+    }
+    .nav-tabs {
+        margin-bottom: 15px;
+    }
+    .progress {
+        margin-bottom: 10px;
+    }
+}
+.container {
+    color:#FFF;
+}
+#top {
+    position:relative;
+}
+#body {
+    box-shadow: 1px 2px 50px 2px #aaa;
+    border:1px solid #2c3e50;
+    border-radius:0 0 20px 20px;
+    padding-bottom:20px;
+}
+#title {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    font-size:5vw;
+    font-family:"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Sawarabi Mincho", serif;;
+    color:#ffa;
+}
+#sidebar {
+    margin-top:20px;
+    padding:0 15px;
+}
+
+#schedule {
+    background-color:#023022;
+}
+#schedule dl {
+    padding-left:15px;
+}
+#schedule dd {
+    margin-left:0.6em;
+}
+#schedule dt {
+    margin-top:0.3em;
+}
+#whatsNew {
+    background-color:#322f10;
+}
+.modal-body iframe {
+    width:100%;
+    border:0px;
+    height:350px;
+    overflow-y:scroll;
+}
+footer {
+    padding: 20px 0;
+    color: #ecf0f1;
+    background-color:#333;
+    margin-top:60px;
+}
+#live {
+    background-color:#3b5998;
+}
+#live table {
+    margin:0 auto;
+    padding:1px;
+}
+#live table td {
+    padding:0.3em;
+    border:1px solid #fff;
+}
+#whatsNew dd {
+    padding-bottom: 0.3em;
+    border-bottom: 1px dotted #FFF;
+    margin-bottom: 0.3em;
+    padding-left: 0.7em;
+}
+#scrollImg {
+    position:fixed;
+    bottom:15px;
+    right:20px;
+    cursor:pointer;
+}
+.nav > li  a {
+    padding-left:2em !important;
+}
+.nav > li > a:focus {
+    background-color:#222 !important;
+    outline:0;
+}
+.nav > li  a:hover {
+	background:url(../img/ico_gnavi.gif) no-repeat 10px;
+    background-color:#FFF !important;
+    color:#000 !important;
+}
+#audioContent li {
+    margin:10px 0;
+    list-style:none;
+}
+#audioContent a img {
+    width:30px;
+    height:30px;
+    position:relative;
+    top:-5px;
+}
+#audioContent li > * {
+    vertical-align:middle;
+}
+audio {
+    width:200px;
+}
+#audioContent .panel-body{
+    background-color:#2c504e;
+}

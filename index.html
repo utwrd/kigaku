@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="uec,UEC,電通,電通大,軽音,バンド,音楽,器楽,器楽部,ギター,ドラム,ベース,調布,unpoco,楽器,音楽,ロック,メタル,アニソン,ニルバーナ,スメルズ,サークル">
+        <meta name="description" content="電気通信大学 器楽部">
+        <meta name="author" content="ume">
+
+        <title>電気通信大学 器楽部</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript">
+         $(function() {
+             $('#scrollImg').click(function() {
+                 $("html,body").animate({scrollTop:0});
+                 return false;
+             });
+
+             // リストボックスの画像中央に合わせてタイトルを移動(windowリサイズに合わせて稼働)
+             $('#title').css({top: $('#top').height() / 2 - $('#title').height() / 2 + 'px'});
+             var timer = false;
+             $(window).resize(function() {
+                 if (timer !== false) {
+                     clearTimeout(timer);
+                 }
+                 timer = setTimeout(function() {
+                     $('#title').css({top: $('#top').height() / 2 - $('#title').height() / 2 + 'px'});
+                 }, 200);
+             });
+         });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand">器楽部TOP</a>
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar-main">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#whatsNewModal" data-toggle="modal">NEW</a></li>
+                            <li><a href="#sheduleModal" data-toggle="modal">SCHEDULE</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LIVE<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#liveModal" data-toggle="modal">TIME TABLE</a></li>
+                                    <li><a href="audio.php">音源</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LINK<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://www.uec-keion.club.uec.ac.jp/" target="_blank">軽音学部</a></li>
+                                    <li><a href="http://www.folksong.club.uec.ac.jp/" target="_blank">フォークソング部</a></li>
+                                    <li><a href="http://www.lsd.club.uec.ac.jp/" target="_blank">シンセデザイン研究部</a></li>
+                                    <li><a href="http://www.studio-nido.com/" target="_blank">Studio Nido</a></li>
+                                    <li><a href="http://sunmusicstudio.com/" target="_blank">サン・ミュージックスタジオ</a></li>
+                                    <li><a href="https://twitter.com/shokujinjp" target="_blank">食神　餃子王</a></li>
+                                    <li><a href="http://www.uec.ac.jp/" target="_blank">電気通信大学</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CONTACT<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://twitter.com/uec_unpocoloco" target="_blank">Twitter</a></li>
+                                    <li><a href="mailto:aiuk.kigaku@gmail.com">Gmail</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container" id="body">
+            <!-- main article -->
+            <article>
+                <div id="top">
+                    <p id="title">電気通信大学<br />器楽部</p>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2500">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/live0.JPG">
+                            </div>
+                            <div class="item">
+                                <img src="img/live1.JPG">
+                            </div>
+                            <div class="item">
+                                <img src="img/live2.JPG">
+                            </div>
+                            <div class="item">
+                                <img src="img/live3.JPG">
+                            </div>
+                            <div class="item">
+                                <img src="img/live4.JPG">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9"
+                        <section>
+                            <div class="page-header" id="banner">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-7 col-sm-6">
+                                        <h1>電気通信大学 器楽部</h1>
+                                        <p class="lead">
+                                            電気通信大学器楽部のHPへようこそ！<br />
+                                            器楽部は電気通信大学公認の軽音系サークルです。<br />
+                                            現在、部員は約40人程在籍しており、初心者・経験者・学科・兼部者問わず活動しております。電通大の軽音系サークルの中でも歴史ある部でOB,OGの方々の来訪も多くあり賑わっております。<br />
+                                            学内外の他サークルとの提携も募集中です。器楽部への質問や入部、部活見学等の問い合わせも随時受け付けております。上部バーのContactからご気軽にご連絡下さい。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="bs-docs-section">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h3>活動内容</h3>
+                                        <p>J-POP、ロック、パンク、ハードロック、メタル、アニソン、ゲームミュージックなど様々なジャンルの曲をコピーして、毎週各バンド毎に練習し、年に数回あるライブで演奏します。<br />
+                                            ライブは学年・経験問わず出演可能で、ライブごとにバンドを組み替えたり、逆にメンバーを固定して各ライブに出演したり形態は自由で、様々な人と深く交流が出来るのもアットホームな器楽の魅力の一つです。<br />
+                                            ライブは基本的に学内で行うため、部で機材を所有しており自分たちでライブを作ります。演奏だけでなく、機材やライブ運営に携わることができるのも特徴です。<br />
+                                            曜日ごとに練習部屋が設けられていて、好きな曜日、時間に練習することができます。<br />
+                                            ライブだけでなく、宴会をしたり、みんなで楽器屋に行ったり様々なイベントを用意してあります。<br />
+                                            活動の幅を広げるために外部との交流も増やしていきたいと思っています。<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="bs-docs-section">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h3>活動場所</h3>
+                                        <p>部室: サークル棟二階の奥のほう</p>
+                                        <p>練習室: サークル棟二階(3部屋)</p>
+                                        <p>ライブ: サークル棟二階音楽練習室</p>
+                                        <p class="small">京王線 調布駅 徒歩10分</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="bs-docs-section">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5>活動実績</h5>
+                                        <p>アジカン/9mm/Nirvana/クリープ/サイサイ/マンウィズ/スピッツ/ミッシェル/
+                                            ワンオク/ブレマイ/ホルモン/チャットモンチー/ししゃも/ペルソナ/メタリカ/
+                                            ボンジョビ/グリーンデイ/ユニゾン/SCANDAL/miwa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="sidebar" class="nav nav-pills nav-stacked col-lg-3">
+                        <article>
+                            <a class="twitter-timeline"  href="https://twitter.com/UEC_unpocoloco" data-widget-id="694752153181691904">@UEC_unpocolocoさんのツイート</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </article>
+                    </div>
+                </div>
+            </article>
+            <!-- begin modal -->
+            <section>
+                <div class="modal fade" id="whatsNewModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="whatsNew">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+                                </button>
+                                <h2 id="modal-title">WHAT'S NEW</h2>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="whatsNew.html"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="modal fade" id="sheduleModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="schedule">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+                                </button>
+                                <h2 class="modal-header">SCHEDULE</h2>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="schedule.html"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <p class="small text-center">※あくまでも暫定的な日程で、今後変更の可能性があることをご了承ください</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="modal fade" id="liveModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="live">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+                                </button>
+                                <h2 class="modal-title">TIME TABLE</h2>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="timeTable.html"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end modal -->
+            <div id="scrollImg">
+                <img src="img/scroll.png" />
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center copyright small">
+                        © 2016 UEC-Kigakubu
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+         $('.bs-component [data-toggle="popover"]').popover();
+         $('.bs-component [data-toggle="tooltip"]').tooltip();
+        </script>
+    </body>
+</html>
