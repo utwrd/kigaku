@@ -1,0 +1,32 @@
+body {
+    background-image: url(../img/sinkan1.jpg);
+}
+/*
+#sinkan {
+    background-color:#8cec93;
+    box-shadow: 1px 2px 50px 2px #aaa;
+    border:1px solid #2c3e50;
+    border-radius:0 0 20px 20px;
+    padding-bottom:20px;
+}
+*/
+.navbar-inverse, footer{
+    background-color:#ff9797;
+    border-color:#460707;
+}
+#sinkan .col-md-4 {
+    margin:0.3em 0;
+}
+#sinkan div.item {
+    color:#555;
+}
+#sinkan .row .panel-heading a:hover {
+    color:#ab7018;
+}
+.modal-header {
+    color:#fff;
+}
+.head {
+    background-color: #55baee;
+    
+}

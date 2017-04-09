@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jQueryAutoHeight.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -28,6 +29,10 @@
                  return false;
              });
              $('.panel-collapse').collapse('hide');
+             if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+                 //ここに書いた処理はスマホ閲覧時は無効となる
+                 $('#sinkan .panel').autoHeight();
+             }
          });
         </script>
     </head>
@@ -80,11 +85,84 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="container" id="sinkan">
             <!-- main article -->
             <article>
-                <div class="row">
+                <div class="row head">
+                    <div class="col-md-12">
+                        <h3>HOW TO 新歓</h3>
+                        <p>
+                            4月の新歓期は、大学をあげて様々な団体がいくつも催しものをします。<br />
+                            我が器楽部は、以下の新歓イベントを用意しました。5日(水)多めです...q(T▽Tq)(pT▽T)p<br />
+                            随時更新するので、要チェックでお願いします。基本的に無料で、見るだけなので足さえ運んでもらえればOKっす。様々なサークルを一通り検討できる機会は、この新歓期だけなので積極的な参加を推奨します。※新歓疲れによる学力低下にご注意ください。<br />
+                            器楽部の特徴や活動内容の紹介はTOPからご覧ください。
+                        </p>
+                    </div>
                 </div>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item panel panel-info">
+                            <div class="panel-heading">4/5(水)~/7(金) メンスト勧誘</div>
+                            <div class="panel-body">メインストリート、通称メンストでビラを配ったり、ブースを出したりします。器楽部のブースは、メンスト最奥G棟F棟向かいになります。<br />
+                                楽器出して、どんちゃんやっているので興味があったり、ひまだったりしたら気軽に立ち寄って話しかけてみてください。※メンストは、東地区の開けた通りで、正門から奥の方まで行くとサークル棟！</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item panel panel-info">
+                            <div class="panel-heading">4/5(水) コミパ演奏</div>
+                            <div class="panel-body">
+                                <strong>12:25から、ベボベやります。</strong><br />
+                                たくさんのオーディエンスの来場お待ちしております。<br />
+                                ※コミュニケーションパークは東地区掲示板前の広場です。新歓期間は諸団体がここで催します。</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item panel panel-info">
+                            <div class="panel-heading">4/5(水) サークル回り/サークル説明会</div>
+                            <div class="panel-body">
+                                11:00~12:00 サークル回りでは各サークルが各教室を回ってプレゼンします。<br />
+                                15:10~16:55 サークル棟音楽練習室にて、主に音楽系団体が説明会をします。器楽部は16:40からです。<br />
+                                諸サークルの概要を網羅できる良き機会なので、参加する価値ｱﾘｱﾘｱﾘｱﾘ!!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item panel panel-warning">
+                            <div class="panel-heading"><a href="https://goo.gl/forms/HMFLP0HIKfV6L9aS2" target="_blank">4/8(土) 18時半 お食事会</a><small style="color:#bfbf04;">←参加者click</small></div>
+                            <div class="panel-body"><strong>新入生は無料でご飯を食べられる好機！</strong>地元民ぞ知る名物店。大学生っぽい話ができる機会。ぜひトライ。タイトルのリンクから参加申込して、当日はサークル棟２階部室前に18時半に集合してください。</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item panel panel-warning">
+                            <div class="panel-heading"><a href="">4/17(月)~/19(水) シンセ研主催合同ライブ</a></div>
+                            <div class="panel-body">シンセデザイン研究部さんが主催する音楽サークルが大学会館４階で一同に会するライブイベントです。<br />
+                                器楽部からは2枠!!<br />
+                                <strong>4/18(火) 19:50~ ベボベ</strong><br />
+                                <strong>4/19(水) 17:00~ きがおちゃんバンド</strong><br />
+                                諸サークルの演奏が一通り見物できるので、是非是非。※大学会館は生協や食堂が入っている建物の４Fです。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item panel panel-warning">
+                            <div class="panel-heading"><strong>4/23(日) 器楽部新歓ライブ</strong></div>
+                            <div class="panel-body">サークル棟2F音楽練習室にて開催ッ！！何をやっているのか、手っ取り早く見に来てもらえばわかるさ。ドリンク、お菓子あります。終了後の打ち上げはなんと無料ううううううッ！！！<a href="https://goo.gl/forms/CefnSJLperJUoh6u1" target="_blank">こちらから</a><br />
+                                詳しくは上部ナビゲータのLIVEをご覧ください。</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item panel panel-info">
+                            <div class="panel-heading">5月上旬 入部説明会</div>
+                            <div class="panel-body">入部するよって方はこれに出席してください。部員としての権利や義務を与えます!ヽ(=´▽`=)ﾉ詳細な日程はまた告知します。</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
             </article>
             <!-- begin modal -->
             <section>
@@ -152,16 +230,16 @@
             <div id="scrollImg">
                 <img src="img/scroll.png" />
             </div>
-        </div>
+            </div>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-center copyright small">
-                        © 2016 UEC-Kigakubu
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center copyright small">
+                            © 2016 UEC-Kigakubu
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
     </body>
 </html>

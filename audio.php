@@ -27,6 +27,7 @@
                  return false;
              });
              $('.panel-collapse').collapse('hide');
+             $(":radio[name='audio']").change(function(){$("audio").width($(this).attr("id"))});
          });
         </script>
     </head>
@@ -83,7 +84,15 @@
             <article>
                 <div class="row">
                     <div class="col-lg-12" id="audioContent">
-                        <h3>過去のLIVE音源</h3>
+                      <h3>過去のLIVE音源</h3>
+                      <p>ストリーミング再生、左アイコンクリックでダウンロードが可能です。</p>
+                      <p>
+                        <span>↓↓オーディオバーのサイズの変更が可能です。↓↓</span><br />
+                        <input type="radio" name="audio" id="20%" /><label for="20%">20%</label>
+                        <input type="radio" name="audio" id="50%" /><label for="50%">50%</label>
+                        <input type="radio" name="audio" id="70%" /><label for="70%">70%</label>
+                        <input type="radio" name="audio" id="100%" /><label for="100%">100%</label>
+                      </p>
                         <ul class="panel-group" id="accordion">
                                       <!-- ライブひとつにつきアコーディオンパネルリスト作成 phpでファイルリスト化 -->
                                       <?php

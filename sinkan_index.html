@@ -39,6 +39,9 @@
                      $('#title').css({top: $('#top').height() / 2 - $('#title').height() / 2 + 'px'});
                  }, 200);
              });
+
+             // 新歓用モーダル
+             $("#sinkanModal").modal();
          });
         </script>
     </head>
@@ -126,8 +129,10 @@
                                         <p class="lead">
                                             電気通信大学器楽部のHPへようこそ！<br />
                                             器楽部は電気通信大学公認の軽音系サークルです。<br />
-                                            現在、部員は約40人程在籍しており、初心者・経験者・学科・兼部者問わず活動しております。電通大の軽音系サークルの中でも歴史ある部でOB,OGの方々の来訪も多くあり賑わっております。<br />
-                                            学内外の他サークルとの提携も募集中です。器楽部への質問や入部、部活見学等の問い合わせも随時受け付けております。上部バーのContactからご気軽にご連絡下さい。
+                                            現在、部員は約30人程在籍しており、初心者・経験者・学科・兼部者問わず活動しております。(大学から始めた人が半分くらい。)<br />
+                                            電通軽音系サークルの中でも歴史ある部でOB,OGの方々の来訪も多く賑わっております。また、電通軽音サークルの中で唯一？他大との提携がないため、こじんまりしてますがじっくりしっぽりそれなりに生きたい人には向いていると思います。<br />
+                                            部員は多種多様な趣味の人間が多く、その点も売りです。
+                                            質問や入部、部活見学等の問い合わせも随時受け付けております。上部バーのContactからご気軽にご連絡下さい。
                                         </p>
                                     </div>
                                 </div>
@@ -184,6 +189,43 @@
                 </div>
             </article>
             <!-- begin modal -->
+            <!-- add sinkan modal -->
+            <style>
+              #sinkanModal .modal-content{
+                  background-color:#fd83ac;
+              }
+              #sinkanModal .modal-content dl{
+                  margin:0;
+              }
+              #sinkanModal .modal-content small{
+                  color:#fe3xf;
+              }
+            </style>
+            <section>
+                <div class="modal fade" id="sinkanModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
+                                </button>
+                                <h2 class="modal-title"><a href="sinkan.html">2017新歓情報</a></h2>
+                                <small>↑クリック</small>
+                                <div class="modal-body">
+                                    <dl><dt>4/5(水)~/7(金)</dt><dd>オリテン・メインストリート</dd></dl>
+                                    <dl><dt>4/5(水) 11:00~</dt><dd>サークル回り</dd></dl>
+                                    <dl><dt>4/5(水) 12:25~</dt><dd>コミュニケーションパーク演奏</dd></dl>
+                                    <dl><dt>4/5(水) 16:40~</dt><dd>サークル説明会</dd></dl>
+                                    <dl><dt>4/8(土)</dt><dd><a href="https://goo.gl/forms/HMFLP0HIKfV6L9aS2" target="_blank">お食事会</a></dd></dl>
+                                    <dl><dt>4/17(月)~/19(水)</dt><dd>シンセ研主催 合同ライブ</dd></dl>
+                                    <dl><dt>4/23(日)</dt><dd>器楽部 新歓ライブ</dd></dl>
+                                    <dl><dt>5月某日</dt><dd>入部説明会</dd></dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div class="modal fade" id="whatsNewModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
                     <div class="modal-dialog">
@@ -192,7 +234,7 @@
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
                                 </button>
-                                <h2 id="modal-title">WHAT'S NEW</h2>
+                                <h2 class="modal-title">WHAT'S NEW</h2>
                             </div>
                             <div class="modal-body">
                                 <iframe src="whatsNew.html"></iframe>
@@ -212,7 +254,7 @@
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">&#215;</span><span class="sr-only">閉じる</span>
                                 </button>
-                                <h2 class="modal-header">SCHEDULE</h2>
+                                <h2 class="modal-title">SCHEDULE</h2>
                             </div>
                             <div class="modal-body">
                                 <iframe src="schedule.html"></iframe>
