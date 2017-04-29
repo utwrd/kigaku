@@ -70,7 +70,9 @@ css/ CSSを配置。bootstrap.cssもここ
 
 js/ JavaScriptを配置。 bootstrap.js,jqueryもここ
 
-font/ fontを配置。
+img/ 画像を設置。
+
+fonts/ fontを配置。
 
 audio/ 音源のmp3を配置。
 
