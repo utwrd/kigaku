@@ -19,15 +19,50 @@ user: unpowww
 password: xxxx
 アップロードコマンドはftpで検索。
 
+-------------------------
+bootstrapでできること
+-------------------------
+bootstrapはtwitter社が開発した、css/javascriptフレームワークである。
+つまり、デザイナーが逐一css/jsをこねくり回さずとも、bootstrapに指定されたhtml構造でクラス名をつければ自動的に
+デザインが適用されるというわけである。
+
+特徴として、
+1.レスポンシブなページの作成
+2.modalBox
+3.アコーディオンパネル
+4.カルーセルパネル
+5.ボタン
+6.ナビゲーションパネル
+を提供してくれる。
+
+bootstrapは、主にブロックにpaddingを設定することでレイアウトを保ちつつ、レスポンシブページを提供しているので、
+デザイナーがむやみにmarginを設定すると、思わぬ挙動を起こしかねない。
 
 -------------------------
 仕様
 -------------------------
+各ファイル・フォルダについて、
+
+index.html トップページ
+audio.php 音源ダウンロード
+
+以下modal内で表示される。
+whatsNew.html 新着情報
+schedule.html 年間スケジュール
+timeTable.html ライブタイムテーブル
+
+css/ CSSを配置。bootstrap.cssもここ
+js/ JavaScriptを配置。 bootstrap.js,jqueryもここ
+font/ fontを配置。
+audio/ 音源のmp3を配置。
+
+
 styleはbootstrapを使用。レイアウト面の変更はbootstrapを参照。
 style.cssが自前css。
-jsはscriptタグ内で、タイトルのセンタリング・画面スクロール・アコーディオンの不具合の暫定策について。
-modalで表示するhtml(以下)はインラインstyleタグで記述。
-whatsNew.html,timeTable.htmlはindex.html中のiframeで表示。（cssも各自インライン）
+jsはheadタグのscriptタグ内で、タイトルのセンタリング・画面スクロール・アコーディオンの不具合について記述している。
+
+modalで表示するhtmlのcssはそのhtmlのheadタグ内styleタグで記述。
+
 現状のaudio.phpに依存してaudio/のディレクトリ階層は
 子にディレクトリ（ライブの日付とその名前、ディレクトリ名はyyyy_mm_name）、
 その子にmp3ファイル(ファイル名はnn_name)に統一する。
@@ -35,10 +70,21 @@ whatsNew.html,timeTable.htmlはindex.html中のiframeで表示。（cssも各自
 -------------------------
 編集方法
 -------------------------
-whatsNew/timeTableの編集は各々個別htmlよりマークアップ。
-index.htmlは極力いじらない。※html構造自体をいじる場合のみ
+
+index.htmlの構造は極力いじらない。
+
 phpに詳しい人はaudio.phpのスクリプトを再帰的にディレクトリにアクセスして、
 ディレクトリ階層が変わっても対応できるようになれば有難い。
 
-audio/--yyyy_mm_liveName/--nn_bandName.mp3
-      
+配置構造と名前指定は以下のようにする必要がある。
+audio/yyyy_mm_liveName/nn_bandName.mp3
+
+-------------------------
+新歓用
+-------------------------
+新歓期にはHPを差し替える。
+最新のindex.htmlをまずローカルに落としてくる。
+新歓用のindex.htmlをサーバーに設置。(ローカルでは仮にsinkan_index.htmlとしておき、サーバではindex.htmlとする)
+新歓特設ページ仮にsinkan.htmlを設置。
+
+ここで、indexのナビゲーションパネルに新歓の項目を追加することを忘れない。
